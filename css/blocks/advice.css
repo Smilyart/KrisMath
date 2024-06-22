@@ -1,0 +1,69 @@
+.advice {
+    background: #2c1d4f;
+}
+
+.advice .advice__wrapper {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advice .advice__item {
+    position: relative;
+    padding: 0 15px;
+    width: 60%;
+}
+
+.advice .advice__item:first-child {
+    padding: 0;
+}
+
+.advice .advice__item .advice_icons {
+    border-radius: 3%;
+    width: 237px;
+    height: auto;
+    /*background: rgba(105, 65, 211, 0.63);*/
+}
+
+.advice .advice__item .advice__title {
+    position: absolute;
+    top: 20%; /* Положение по вертикали по центру */
+    left: 50%; /* Положение по горизонтали по центру */
+    transform: translate(-50%, -50%); /* Центрирование по центру блока */
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    width: 70%;
+    text-align: left;
+}
+
+.advice .advice__item .advice__title::after {
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 4px;
+    background-color: #f7d077;
+    top: 55px;
+    left: 13%;
+    transform: translateX(-50%);
+}
+
+.advice .advice__item .caption__pos {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.advice .advice__form {
+    padding: 0 15px;
+}
+
+.advice .advice__form .text__desc {
+    font-size: 17px;
+    text-align: left;
+    margin-top: 20px;
+}

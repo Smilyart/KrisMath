@@ -1,0 +1,189 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.nav .nav__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav .nav__list li {
+    margin-right: 30px;
+}
+
+.nav .nav__list li:last-child {
+    margin-right: 0;
+}
+
+.nav .nav__list a {
+    color: #817B8F;
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+	line-height: 2.5; /*высота строки*/
+    position: relative;
+}
+
+.nav .nav__list a:hover {
+    color: #f7d077;
+    transition: 0.25s;
+}
+
+.nav .nav__list a::after {
+    display: block;
+	position: absolute;
+	left: 0; /*направление подчеркивания*/
+	width: 0;/*длинна линии до наведения курсора*/
+	height: 2px; /*ширина линии*/
+	background-color: #f7d077; /*цвет линии*/
+	content: "";
+	transition: width 0.25s ease-out; /*время анимации*/
+}
+
+.nav .nav__list a:hover::after {
+    width: 150%;
+    left: -10px;
+}
+
+.social__wrapper {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.headerlink {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.header {
+    background: url('../../img/header__bg.svg') center 50%/cover no-repeat;
+    min-height: 65vh; /*114/140*/
+    position: relative;
+}
+
+.header .header__cover {
+    margin-top: 100px;
+}
+
+.header .header__logo {
+    display: flex;
+    width: 210px;
+    height: 41px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.icondot {
+    display: flex;
+    justify-content: center;
+    width: 72px;
+    height: auto;
+}
+
+.icondot .icondot__dots {
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    margin-right: 12px;
+}
+
+.icondot .icondot__dots:last-child {
+    margin-right: 0;
+}
+
+.yellowcolor {
+    background-color: #f7d077;
+}
+
+.bluecolor {
+    background-color: #5ab9ef;
+}
+
+.redcolor {
+    background-color: #df647b;
+}
+
+.orangecolor {
+    background-color: #e97f53;
+}
+
+.header .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header__wrapper:last-child {
+    padding-bottom: 75px;
+}
+
+.mathdemo {
+    width: 565px;
+    height: 404px;
+    order: 1;
+}
+
+.header .header__info {
+    margin-right: 177px;
+}
+
+.title_desc {
+    color: #747474;
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 28px;
+    line-height: 1.4;
+}
+
+.startstep {
+    position: relative;
+    margin-top: 42px;
+    padding: 5px; /*check this*/
+}
+
+.text_yellow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    color: #F7D077;
+    width: 80%;
+}
+
+.header .header__steps {
+    position: relative;
+    width: 183px;
+    margin-top: 30px;
+}
+
+.text_number {
+    color: #2C1D4F;
+    font-size: 44px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.indent {
+    margin-top: 50px;
+}
+
+.icondot_center {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

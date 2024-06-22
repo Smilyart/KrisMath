@@ -1,0 +1,52 @@
+.faq {
+    background: url('../../img/faq_screen.jpg') center center/cover no-repeat;
+}
+
+.faq .faq__wrapper {
+    padding: 140px 0;
+}
+
+.faq .faq__accordion {
+    position: relative;
+    color: #444;
+    cursor: pointer;
+    padding: 18px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 23px;
+    font-weight: 700;
+    color: #2C1D4F;
+}
+
+.faq .faq__accordion::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background: #ccc5ce;
+    bottom: 0;
+    left: 0;
+}
+
+.faq .faq__accordion::after {
+    content: "\1F380"; /* стрелочка вниз в виде символа Unicode */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    transition: transform 0.4s;
+}
+
+.faq .faq__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    font-size: 17px;
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #575757;
+}

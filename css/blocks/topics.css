@@ -1,0 +1,42 @@
+.topics {
+    background: #fff;
+}
+
+.topics .topics__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.topics .topic__item {
+    display: flex;
+    align-items: center;
+    width: 31%;
+    min-height: 85px;
+    margin-top: 75px;
+    text-decoration: none;
+}
+
+.topics .topic__item:nth-child(1), .topics .topic__item:nth-child(2), .topics .topic__item:nth-child(3) {
+    margin-top: 0;
+    /*1, 2 и 3 елемент убирает отступ*/
+}
+
+.topics .topic__logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.topics .topic__text {
+    color: #000;
+    font-size: 23px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.topics .topic__item:hover .topic__text {
+    color: #f7d077;
+}
